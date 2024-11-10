@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #09a6a3;
+  --secondary-color: #9dbfaf;
+  --background-color: #e4f6ee;
+  --button-color: #09a6a3;
+  --button-hover-color: #007bff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.home-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.home-page button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-page button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.destination-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.destination-selection h2 {
+  color: var(--primary-color);
+}
+
+.input-mode-buttons button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-mode-buttons button.active {
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+.destination-selection input {
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  width: 80px;
+  max-width: 300px;
+}
